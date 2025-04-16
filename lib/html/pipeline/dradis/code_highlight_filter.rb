@@ -7,7 +7,7 @@ module HTML
       #   n/a
       #
       # This filter does not write any additional information to the context hash.
-      class CodeHighlightFilter < Filter
+      class CodeHighlightFilter < HTML::Pipeline::Filter
         REGEX = /\$\$\{\{(.+?)\}\}\$\$/
 
         # Locate the $${{}}$$ sequence inside code blocks and highlight it (via
