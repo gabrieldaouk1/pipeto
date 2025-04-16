@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: dradis_dev
+
+test:
+  <<: *default
+  database: dradis_test
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
