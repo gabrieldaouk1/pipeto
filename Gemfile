@@ -51,7 +51,6 @@ gem 'builder'
 gem 'differ', '~> 0.1.2'
 
 # HTML processing filters and utilities
-gem 'html-pipeline'
 gem 'liquid'
 
 gem 'kaminari', '~> 1.2.1'
@@ -87,6 +86,9 @@ gem 'bcrypt', '3.1.12'
 
 # Required by Rails (uglifier and activesupport)
 gem 'json', '2.3.0'
+
+# Gemfile
+gem 'html-pipeline'
 
 # XML manipulation
 gem 'nokogiri', '>= 1.13.10'

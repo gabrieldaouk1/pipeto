@@ -1,3 +1,4 @@
+require 'html/pipeline'
 module HTML
   class Pipeline
     module Dradis
