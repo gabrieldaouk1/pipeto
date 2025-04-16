@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.2.2.1'
@@ -14,7 +14,7 @@ gem 'sass-rails', '~> 6.0'
 gem 'terser', '~> 1.1'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'mini_racer', platforms: :ruby
+# gem 'mini_racer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 5.0'
@@ -89,7 +89,7 @@ gem 'bcrypt', '3.1.12'
 gem 'json', '2.3.0'
 
 # XML manipulation
-gem 'nokogiri', '>= 1.18.5'
+gem 'nokogiri', '>= 1.13.10'
 
 # MySQL backend
 # gem 'mysql2', '~> 0.5.6'
@@ -176,7 +176,7 @@ group :development do
   # security
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
-  gem 'ruby_audit', require: false
+  # gem 'ruby_audit', require: false
 
   gem 'rubocop', require: false
 end
@@ -224,7 +224,7 @@ gem 'dradis-api', path: 'engines/dradis-api'
 gem 'dradis-projects', '~> 4.15.0'
 
 plugins_file = 'Gemfile.plugins'
-if File.exists?(plugins_file)
+if File.exist?(plugins_file)
   eval(IO.read(plugins_file), binding)
 end
 
